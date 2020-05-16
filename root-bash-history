@@ -1,0 +1,45 @@
+fallocate -l 2G /swapfile
+chmod 600 /swapfile 
+mkswap /swapfile 
+swapon /swapfile 
+nano /etc/fstab 
+nano /etc/locale.gen
+nano /etc/locale.conf
+locale-gen
+nano /etc/vconsole.conf
+nano /etc/hosts
+nano /etc/hostname
+lsblk
+useradd -m -G wheel ds
+pass
+root
+root
+passwd
+passwd ds
+EDITOR=nano visudo
+grub-install --target=i386-pc /dev/sda
+pacman -S lxdm
+nano /etc/lxdm/lxdm.conf 
+grub-mkconfig -o /boot/grub/grub.cfg
+ln -sf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
+hwclock --systohc
+pacman -S noto-fonts papirus-icon-theme arc-gtk-theme ttf-ubuntu-font-family
+nano /etc/pacman.conf 
+pacman -
+pacman -Syyy
+pacman -S xfce4 xfce4-goodies wine lib32-libldap lib32-libpulse
+nano /etc/lxdm/lxdm.conf 
+cat /etc/pacman.d/mirrorlist 
+pacman -S firefox thunderbird mate-calc atril engrampa archlinux-wallpapers
+pacman -S firefox thunderbird mate-calc atril engrampa archlinux-wallpaper
+reflector --country Germany --sort rate --protocol https --age 15 --save /etc/pacman.d/mirrorlist 
+pacman -S reflector
+reflector --country Germany --sort rate --protocol https --age 15 --save /etc/pacman.d/mirrorlist 
+pacman -S firefox thunderbird mate-calc atril engrampa archlinux-wallpaper
+pacman -S winetricks zenity
+pacman -S htop
+exit
+systemctl enable lxdm
+systemctl enable NetwrokManager
+systemctl enable NetworkManager
+exit
